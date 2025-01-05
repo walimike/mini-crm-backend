@@ -1,5 +1,5 @@
 from rest_framework.routers import DefaultRouter
-from .views import LeadViewSet, ContactViewSet, NoteViewSet, ReminderViewSet
+from .views.crm import LeadViewSet, ContactViewSet, NoteViewSet, ReminderViewSet
 
 router = DefaultRouter()
 router.register('leads', LeadViewSet)

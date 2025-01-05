@@ -1,6 +1,6 @@
 from rest_framework.viewsets import ModelViewSet
-from .models import Lead, Contact, Note, Reminder
-from .serializers import LeadSerializer, ContactSerializer, NoteSerializer, ReminderSerializer
+from ..models import Lead, Contact, Note, Reminder
+from ..serializers import LeadSerializer, ContactSerializer, NoteSerializer, ReminderSerializer
 
 class LeadViewSet(ModelViewSet):
     queryset = Lead.objects.all()
